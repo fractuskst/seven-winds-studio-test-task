@@ -1,13 +1,20 @@
-import './App.style.scss'
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+import styles from './App.module.scss';
+import ProjectTitle from './components/ProjectTitle';
+import ProjectTable from './components/Table';
 
 export function App() {
-    const params = Object.entries({
-        cc_load_policy: 0,
-        controls: 2,
-        fs: 0,
-        rel: 0,
-        showinfo: 0
-    }).map(([key, value]) => `${key}=${value}`).join('&')
-
-    return <iframe src={'https://youtube.com/embed/BNflNL40T_M?' + params} />
+  return (
+    <div className={styles.container}>
+      <Header />
+      <div className={styles.main}>
+        <Navbar />
+        <div className={styles.table}>
+          <ProjectTitle />
+          <ProjectTable />
+        </div>
+      </div>
+    </div>
+  );
 }

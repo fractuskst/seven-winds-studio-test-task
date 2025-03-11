@@ -1,0 +1,45 @@
+@import '../../../../styles/variables.scss';
+
+.container {
+  position: relative;
+  & .verticalLine {
+    position: absolute;
+    top: -50%;
+    bottom: 50%;
+    width: 1px;
+    background-color: #c6c6c6;
+  }
+
+  & .horizontalLine {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 1px;
+    background-color: #c6c6c6;
+  }
+  & .actions {
+    display: flex;
+    border-radius: 6px;
+    width: 55px;
+    height: 28px;
+    cursor: pointer;
+    &:hover {
+      background-color: #414144;
+    }
+  }
+
+  & .button {
+    padding: 6px;
+    z-index: 1;
+  }
+
+  & .feedIcon {
+    color: #7890b2;
+    width: 16px;
+    height: 16px;
+  }
+
+  & .deleteIcon {
+    color: #df4444;
+  }
+}

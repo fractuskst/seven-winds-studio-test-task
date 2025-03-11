@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.container {
+  & .input {
+    border: $border;
+    border-radius: 6px;
+    font-size: $base-font-size;
+    height: 36px;
+    color: $input-text-color;
+    width: 100%;
+    padding-left: 10px;
+  }
+}

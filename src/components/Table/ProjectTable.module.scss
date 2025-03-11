@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.container {
+  padding: 0 9px 0 10px;
+  overflow-y: auto;
+
+  & .headerRow {
+    height: 42px;
+    & > * {
+      color: $secondary-text-color;
+      font-size: $small-font-size;
+      font-weight: 400;
+      border-bottom: $border;
+      padding: 0 12px;
+    }
+  }
+  .body {
+    & > * {
+      border-bottom: $border;
+    }
+    & > *:last-child {
+      border-bottom: none;
+    }
+  }
+}

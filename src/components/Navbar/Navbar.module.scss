@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.container {
+  min-width: 234px;
+  height: 100%;
+  border-right: $border;
+  background-color: $secondary-color;
+
+  & .header {
+    padding: 0 0 0 20px;
+    border-bottom: $border;
+    height: 44px;
+  }
+
+  & .headerPrimaryText {
+    font-size: $base-font-size;
+    color: $secondary-text-color;
+  }
+
+  & .headerSecondaryText {
+    font-size: 10px;
+    color: $secondary-text-color;
+  }
+
+  & .listItemButton {
+    height: 32px;
+    padding-left: 20px;
+  }
+
+  & .activeListItemButton {
+    background-color: #a1a1aa;
+  }
+
+  & .listItemPrimaryText {
+    font-size: $base-font-size;
+  }
+}
+
+.listItemIcon {
+  padding-right: 14px;
+}
+
+.headerIcon {
+  padding-right: 7px;
+}

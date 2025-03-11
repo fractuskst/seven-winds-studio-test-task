@@ -1,0 +1,7 @@
+@import '../../../../styles/variables.scss';
+
+.container {
+  & .rowCell {
+    color: $primary-text-color;
+  }
+}
